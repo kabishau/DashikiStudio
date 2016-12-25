@@ -42,9 +42,48 @@ body {
 	margin-left: 20px;
 	display: flex;
 	justify-content: space-between;
-	
+}
+
+.upperHeaderSearch {
+	width: 300px;
+}
+
+.upperHeaderSearch input {
+	height: 24px;
+	width: 250px;
+	border: 1px solid #A6A399;
+}
+
+.upperHeaderSearch button {
+	height: 24px;
+	line-height: 24px;
+	font-size: 24px;
+	color: #EDCFDF;
+	border: none;
+	background: none;
+	margin-left: 5px;
+}
+
+.upperHeaderUser {
+	width: 200px;
+	text-align: right;
+	color: #EDCFDF;
+	font-size: 24px;
+	display: flex;
+	justify-content: flex-end;;
 
 }
+
+.upperHeaderUser a {
+	display: block;;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #EDCFDF;
+	margin-left: 20px;
+}
+
+
+
 
 .menu {
 	display: flex;
@@ -91,39 +130,55 @@ body {
 .mainCategories {
 	height: 200px;
 	width: 960px;
-	align-self: center;	
+	align-self: center;
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 30px;
 }
 
-.mainCategory {
+.mainCategoryToys,
+.mainCategoryPrints,
+.mainCategoryPatterns {
 	height: 200px;
 	width: 294px;
-	background: #D8D8D8;
 	display: flex;
+	background-size: cover;
+	opacity: 0.7;
 }
 
-.mainCategory div {
-	margin: auto;
-	border: 1px solid #FFFFFF;
-	color: #FFFFFF;
-	height: 45px;
-	width: 200px;
+.mainCategoryToys {
+	background-image: url("../images/category_toys.jpg");
 }
 
-.mainCategory a {
+.mainCategoryPrints {
+	background-image: url("../images/category_prints.jpg");
+}
+
+.mainCategoryPatterns {
+	background-image: url("../images/category_patterns.jpg");
+}
+
+.mainCategoryToys:hover,
+.mainCategoryPrints:hover,
+.mainCategoryPatterns:hover {
+opacity: 1;
+}
+
+.mainCategoryToys a,
+.mainCategoryPrints a,
+.mainCategoryPatterns a {
 	display: block;
 	text-decoration: none;
 	margin: auto;
-	border: 1px solid #FFFFFF;
+	border: 2px solid #FFFFFF;
 	color: #FFFFFF;
 	height: 45px;
 	width: 200px;
 }
 
-
-.mainCategory h1 {
+.mainCategoryToys h1,
+.mainCategoryPrints h1,
+.mainCategoryPatterns h1 {
 	text-transform: uppercase;
 	font-family: "Roboto Slab" "Open Sans";
 	font-size: 30px;
@@ -139,7 +194,6 @@ body {
 	align-self: center;
 	margin-bottom: 20px;
 	background: #EDCFDF;
-
 	line-height: 60px;
 	text-align: center;
 
@@ -150,7 +204,7 @@ body {
 	font-family: "Roboto Slab";
 	font-size: 24px;
 	font-weight: 500;
-	color: #FFFFFF;	
+	color: #FFFFFF;
 }
 
 .mainNew,
@@ -164,14 +218,50 @@ body {
 	margin-bottom: 20px;
 }
 
-.mainNewItem,
-.mainPopularItem {
+.mainNewItem1,
+.mainNewItem2,
+.mainNewItem3,
+.mainNewItem4,
+.mainPopularItem1,
+.mainPopularItem2,
+.mainPopularItem3,
+.mainPopularItem4 {
 	height: 225px;
 	width: 225px;
-	background: #D8D8D8;
+	background-size: cover;
 }
 
+.mainPopularItem1 {
+	background-image: url("../images/product1.jpg");
+}
 
+.mainPopularItem2 {
+	background-image: url("../images/product2.jpg");
+}
+
+.mainPopularItem3 {
+	background-image: url("../images/product3.jpg");
+}
+
+.mainPopularItem4 {
+	background-image: url("../images/product4.jpg");
+}
+
+.mainNewItem1 {
+	background-image: url("../images/newItem1.jpg");
+}
+
+.mainNewItem2 {
+	background-image: url("../images/newItem2.jpg");
+}
+
+.mainNewItem3 {
+	background-image: url("../images/newItem3.jpg");
+}
+
+.mainNewItem4 {
+	background-image: url("../images/newItem4.jpg");
+}
 
 /*+++++++++++++++++++++++++++++++++++
                FOOTER
@@ -188,20 +278,11 @@ body {
 
 .footerBorder {
 	width: 1160px;
-	height: 54px;
+	height: 1px;
 	border-top: 1px solid #BCA57E;
-	border-bottom: 1px solid #BCA57E;
-	padding-right: 170px;
-	padding-left: 170px;
 }
 
 
-
-
-
-.innerFooter {
-	margin-bottom: 0;
-}
 
 .footerMenu,
 .storeInfo,
@@ -239,6 +320,7 @@ body {
 	font-size: 18px;
 	color: #7A7A7A;
 	font-family: "Open Sans";
+	text-align: center;
 
 }
 
@@ -255,10 +337,10 @@ body {
 	font-family: "PT Serif";
 	font-size: 24px;
 	font-style: italic;
-	color: #FFFFFF;
+	color: #BCA57E;
 	text-align: center;
 	background: none;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #BCA57E;
 }
 
 .subscribeBottom button {
@@ -270,7 +352,7 @@ body {
 	font-size: 24px;
 	font-weight: 500;
 	color: #BCA57E;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #BCA57E;
 	background: none;
 }
 
@@ -291,5 +373,6 @@ body {
 	margin-left: 2.5px;
 }
 
-
-
+.copyright {
+	color: #7A7A7A;
+}

@@ -4,29 +4,42 @@
 	<meta charset="UTF-8">
 	<title>Dashiki Studio</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
 <div class="wrapper">
 	<header class="header">
 
 		<div class="upperHeader">
-			<div class="upperHeaderRight">
-				<form action="#">
-					<input type="text">
-					<img src="images/search.svg" alt="search">
+			<!--class="fa fa-shopping-basket" aria-hidden="true"
+			<i class="fa fa-search" aria-hidden="true">sdf</i>
+			<span>sdfa</span>
+			<div class="upperHeaderSearch"> -->
+			<div class="upperHeaderSearch">
+				<form class="formSearch" action="index.html" method="post">
+						<input type="text" name="search" value="">
+						<button type="submit" name="search" formaction="#">
+							<span class="fa fa-search" aria-hidden="true"></span>
+						</button>
 				</form>
 			</div>
 
-			<div class="upperHeaderLeft">
-				<!--should I use form for "sign in" and basket-->
+			<div class="upperHeaderUser">
 				<a href="#">sign in</a>
-				<!-- get Font Awesome icons instead of images -->
-				<img src="images/basket.svg" alt="basket">
+				<a href="#">
+					<span class="fa fa-shopping-basket" aria-hidden="true"></span>
+				</a>
+
 			</div>
+
+
+
 		</div>
-		<div>
+
+		<div>	<!--add size to img  -->
 			<img src="images/logo.svg" alt="Dashiki Studio">
 		</div>
+
 		<div class="menu">
 			<div>
 				<a href="#">home</a>
@@ -41,6 +54,7 @@
 				<a href="#">shop patterns</a>
 			</div>
 		</div>
+
 	</header>
 
 	<div class="content">
@@ -49,33 +63,49 @@
 			<img src="images/slader1.jpg" alt="">
 		</div>
 		<div class="mainCategories">
-			<div class="mainCategory">
+			<div class="mainCategoryToys">
 				<a href="#"><h1>toys</h1></a>
 			</div>
-			<div class="mainCategory">
+			<div class="mainCategoryPrints">
 				<a href="#"><h1>prints</h1></a>
 			</div>
-			<div class="mainCategory">
-				<a href="#"><h1>patterns</h1></a>	
+			<div class="mainCategoryPatterns">
+				<a href="#"><h1>patterns</h1></a>
 			</div>
 		</div>
 		<div class="mainHeading">
 			<h2>popular items</h2>
 		</div>
 		<div class="mainPopular">
-			<div class="mainPopularItem">new item1</div>
-			<div class="mainPopularItem">new item2</div>
-			<div class="mainPopularItem">new item3</div>
-			<div class="mainPopularItem">new item4</div>
+			<a href="#">
+					<div class="mainPopularItem1"></div>
+			</a>
+			<a href="#">
+				<div class="mainPopularItem2"></div>
+			</a>
+			<a href="#">
+				<div class="mainPopularItem3"></div>
+			</a>
+			<a href="#">
+				<div class="mainPopularItem4"></div>
+			</a>
 		</div>
 		<div class="mainHeading">
 			<h2>new items</h2>
 		</div>
 		<div  class="mainNew">
-			<div class="mainNewItem">new item1</div>
-			<div class="mainNewItem">new item2</div>
-			<div class="mainNewItem">new item3</div>
-			<div class="mainNewItem">new item4</div>
+			<a href="#">
+				<div class="mainNewItem1"></div>
+			</a>
+			<a href="#">
+				<div class="mainNewItem2"></div>
+			</a>
+			<a href="#">
+				<div class="mainNewItem3"></div>
+			</a>
+			<a href="#">
+				<div class="mainNewItem4"></div>
+			</a>
 		</div>
 
 	</div>
@@ -89,7 +119,6 @@
 				<div><a href="#">shop prints</a></div>
 				<div><a href="#">shop patterns</a></div>
 				<div><a href="#">checkout</a></div>
-				<div><a href="#">join the list</a></div>
 			</div>
 			<div class="storeInfo">
 				<div><a href="#">return & refund</a></div>
@@ -97,11 +126,10 @@
 				<div><a href="#">contacts</a></div>
 				<div><a href="#">private policy</a></div>
 				<div><a href="#">term & conditions</a></div>
-				<div><a href="#">join the list</a></div>
 			</div>
 			<div class="subscribe">
 				<div class="subscribeTop">
-					<span>join to our mail list to receive more from our website</span>
+					<span>join to our mail list and receive more from our website</span>
 				</div>
 				<div class="subscribeBottom">
 					<form action="#">
@@ -111,20 +139,25 @@
 					</form>
 				</div>
 			</div>
+			<!--переделать img через bg -->
 			<div class="instagram">
 				<div class="img1">
-					<img src="#" alt="">
+					<img src="images/insta1.jpg" width="110px" height="110px" alt="">
 				</div>
 				<div class="img2">
-					<img src="#" alt="">
+					<img src="images/insta2.jpg" width="110px" height="110px" alt="">
 				</div>
 				<div class="img3">
-					<img src="#" alt="">
+					<img src="images/insta3.jpg" width="110px" height="110px" alt="">
 				</div>
 				<div class="img4">
-					<img src="#" alt="">
+					<img src="images/insta4.jpg" width="110px" height="110px" alt="">
 				</div>
 			</div>
+		</div>
+		<div class="footerBorder"></div>
+		<div class="copyright">
+			Copyright &copy; 2017 Dashiki Studio. All rights reserved.
 		</div>
 	</footer>
 
